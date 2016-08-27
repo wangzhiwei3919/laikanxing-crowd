@@ -1,0 +1,331 @@
+input[type=button],
+input[type=text],
+input[type=password] {
+  -webkit-appearance: none;
+  outline: none;
+}
+.login-div {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/alert_bg.png");
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 0;
+  display: none;
+}
+.login-div .login-box {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  width: 5.92rem;
+  box-sizing: border-box;
+  background-color: white;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -ms-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  text-align: center;
+}
+.login-div .login-box > div {
+  width: 4.95rem;
+  height: 0.7rem;
+  margin: 0 auto .14rem auto;
+  text-align: left;
+}
+.login-div .login-box > div input {
+  width: 4.77rem;
+  height: inherit;
+  border: .02rem solid #cdcdcd;
+  box-shadow: 0 0 .04rem .001rem #cdcdcd inset;
+  font-size: 0.3rem;
+  color: #787878;
+  padding-left: .18rem;
+  margin-bottom: .2rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.login-div .login-box > div input:focus {
+  outline-offset: 0;
+  outline: 0;
+  border-color: #3edbee;
+}
+.login-div .login-box > p {
+  width: 4.95rem;
+  margin: 0 auto;
+  text-align: left;
+}
+.login-div .login-box .login-tip {
+  height: .64rem;
+  font-size: .30rem;
+  color: #434343;
+  position: relative;
+  margin-bottom: .18rem;
+  line-height: 1rem;
+}
+.login-div .login-box .login-tip .close-login-div {
+  content: url("../img/close-div.png");
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 0.44rem;
+  position: absolute;
+  top: -0.2rem;
+  right: -0.7rem;
+}
+.login-div .login-box .password {
+  position: relative;
+}
+.login-div .login-box .password .hide-password {
+  position: absolute;
+  top: .24rem;
+  right: .20rem;
+  cursor: pointer;
+  width: .3rem;
+  display: none;
+}
+.login-div .login-box .error-log {
+  color: #ff5369;
+  font-size: 0.2rem;
+  text-align: right;
+  margin-bottom: 0.24rem;
+  height: 0.2rem;
+  margin-top: -0.03rem;
+}
+.login-div .login-box .login-btn {
+  background: -webkit-gradient(linear, left top, left bottom, color-start(0.05, #ff5499), color-stop(1, #ff5375));
+  background: -moz-linear-gradient(top, #ff5499 5%, #ff5375 100%);
+  background: -o-linear-gradient(top, #ff5499 5%, #ff5375 100%);
+  background: -ms-linear-gradient(top, #ff5499 5%, #ff5375 100%);
+  background: linear-gradient(to bottom, #ff5499 5%, #ff5375 100%);
+  background: -webkit-linear-gradient(top, #ff5499 5%, #ff5375 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@startColor', endColorstr='@endColor', GradientType=0);
+  -webkit-border-radius: 0.06rem;
+  -moz-border-radius: 0.06rem;
+  -ms-border-radius: 0.06rem;
+  -o-border-radius: 0.06rem;
+  border-radius: 0.06rem;
+  width: 4.95rem;
+  height: 0.73rem;
+  font-size: .4rem;
+  line-height: 0.73rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.login-div .login-box .lose-password {
+  clear: both;
+  height: 0.24rem;
+  margin-bottom: .2rem;
+}
+.login-div .login-box .lose-password > span {
+  font-size: 0.24rem;
+  height: 0.24rem;
+  line-height: 0.24rem;
+  color: #9c9c9c;
+  margin-left: 0.24rem;
+  float: right;
+  cursor: pointer;
+}
+.login-div .login-box .lose-password > span:hover {
+  color: #31ccbb;
+}
+.login-div .login-box .lose-password .find-password {
+  padding-right: .13rem;
+  border-right: .01rem solid #9c9c9c;
+  color: #ff5498;
+}
+.login-div .login-box .other-login {
+  color: #787878;
+  font-size: 0.26rem;
+  height: 0.58rem;
+  line-height: 0.58rem;
+}
+.login-div .login-box .other-login > span {
+  width: 0.58rem;
+  height: 0.58rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: .2rem;
+  vertical-align: middle;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.login-div .login-box .other-login > span a {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+}
+.login-div .login-box .other-login > span a img {
+  display: none;
+}
+.login-div .login-box .other-login .weibo-login {
+  background-image: url("../img/login/weibo.png");
+  margin-left: .3rem;
+}
+.login-div .login-box .other-login .qq-login {
+  background-image: url("../img/login/qq.png");
+}
+.register-div {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/alert_bg.png");
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 0;
+  display: none;
+}
+.register-div .register-box {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5.16rem;
+  text-align: center;
+  width: 5.92rem;
+  box-sizing: border-box;
+  background-color: white;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -ms-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+}
+.register-div .register-box > div {
+  width: 4.95rem;
+  height: 0.7rem;
+  margin: 0 auto .14rem auto;
+  text-align: left;
+}
+.register-div .register-box > div input {
+  width: 4.77rem;
+  height: inherit;
+  border: .02rem solid #cdcdcd;
+  box-shadow: 0 0 .04rem .001rem #cdcdcd inset;
+  font-size: 0.3rem;
+  color: #787878;
+  padding-left: .18rem;
+  margin-bottom: .2rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.register-div .register-box > div input:focus {
+  outline-offset: 0;
+  outline: 0;
+  border-color: #3edbee;
+}
+.register-div .register-box > p {
+  width: 4.95rem;
+  margin: 0 auto;
+  text-align: left;
+}
+.register-div .register-box .login-tip {
+  height: .64rem;
+  font-size: .30rem;
+  color: #434343;
+  position: relative;
+  margin-bottom: .18rem;
+  line-height: 1rem;
+}
+.register-div .register-box .login-tip .close-login-div {
+  content: url("../img/close-div.png");
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 0.44rem;
+  position: absolute;
+  top: -0.2rem;
+  right: -0.7rem;
+}
+.register-div .register-box .password {
+  position: relative;
+}
+.register-div .register-box .password .hide-password {
+  position: absolute;
+  top: .24rem;
+  right: .20rem;
+  cursor: pointer;
+}
+.register-div .register-box .checked {
+  position: relative;
+  clear: both;
+}
+.register-div .register-box .checked .get-checked-code-btn {
+  width: 42%;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.28rem;
+  text-align: right;
+  color: #ff537e;
+  cursor: pointer;
+  position: absolute;
+  padding-right: .2rem;
+  top: 0;
+  right: 0;
+}
+.register-div .register-box .error-log {
+  color: #ff5369;
+  font-size: 0.2rem;
+  text-align: right;
+  margin-bottom: 0.24rem;
+  height: 0.2rem;
+  margin-top: -0.03rem;
+}
+.register-div .register-box .login-btn {
+  background: -webkit-gradient(linear, left top, left bottom, color-start(0.05, #4fe9ca), color-stop(1, #3accae));
+  background: -moz-linear-gradient(top, #4fe9ca 5%, #3accae 100%);
+  background: -o-linear-gradient(top, #4fe9ca 5%, #3accae 100%);
+  background: -ms-linear-gradient(top, #4fe9ca 5%, #3accae 100%);
+  background: linear-gradient(to bottom, #4fe9ca 5%, #3accae 100%);
+  background: -webkit-linear-gradient(top, #4fe9ca 5%, #3accae 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@startColor', endColorstr='@endColor', GradientType=0);
+  -webkit-border-radius: 0.06rem;
+  -moz-border-radius: 0.06rem;
+  -ms-border-radius: 0.06rem;
+  -o-border-radius: 0.06rem;
+  border-radius: 0.06rem;
+  width: 4.95rem;
+  height: 0.73rem;
+  font-size: .4rem;
+  line-height: 0.73rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.register-div .register-box .to-login {
+  margin-top: .2rem;
+  text-align: right;
+}
+.register-div .register-box .to-login > span {
+  font-size: .22rem;
+  color: #9c9c9c;
+  margin-left: .08rem;
+  cursor: pointer;
+}
+.register-div .register-box .to-login .to-login-btn {
+  color: #31ccbb;
+}

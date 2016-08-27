@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/logo@2x.png" type="image/x-icon"/>
+    <title>明星众筹</title>
+    <!--<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101327788" charset="utf-8"></script>-->
+    <!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2164310524&debug=true" type="text/javascript" charset="utf-8"></script>-->
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="https://s95.cnzz.com/z_stat.php?id=1259980737&web_id=1259980737" language="JavaScript"></script>
+    <script src="../js/countData.js"></script>
+    <script src="../js/jquery.md5.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/tools.js"></script>
+    <script src="../js/rem_tools.js"></script>
+    <!--<script src="../js/autoLogin.js"></script>-->
+    <!--<script src="../js/loginOther.js"></script>-->
+    <script src="../js/index.js"></script>
+    <script src="../js/wechatLogin.js"></script>
+
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+<div class="head-background">
+    <header><span class="login-btn">登录</span><span class="share-btn">分享</span></header>
+    <img src="" alt=""/>
+</div>
+<div class="main-background">
+
+</div>
+<div class="main">
+    <div class="main-body">
+        <div class="body-title">
+            <p class="main-title"></p>
+            <p class="main-day">剩余<span></span>天</p>
+        </div>
+        <div class="one-option">
+            <div class="progress"><div class="bar"><div></div></div></div>
+            <div class="bottom">
+                <div class="people">
+                    <p class="tip">参与人数</p>
+                    <p class="nmb">123人</p>
+                </div>
+                <div class="target">
+                    <p class="tip">完成度</p>
+                    <p class="nmb">65%</p>
+                </div>
+                <div class="votes">
+                    <p class="tip">人气值</p>
+                    <p class="nmb">123点</p>
+                </div>
+            </div>
+            <div class="img-box"><a href='javascript:0' class='help-btn'>支持</a></div>
+        </div>
+        <div class="option-box">
+            <div class="option" id="clone">
+                <div class="detail">
+                    <img src="../img/logo@2x.png" alt="" class="headerImg"/>
+                    <div class="info">
+                        <div class="top">
+                            <p class="name">宇宙少女</p>
+                            <p class="btn activity-end">完成</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="people">
+                                <p class="tip">参与人数</p>
+                                <p class="nmb">123人</p>
+                            </div>
+                            <div class="target">
+                                <p class="tip">完成度</p>
+                                <p class="nmb">65%</p>
+                            </div>
+                            <div class="votes">
+                                <p class="tip">人气值</p>
+                                <p class="nmb">123点</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="progress"><div class="bar"><div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-detail">
+    <p class="tip">活动说明:</p>
+    <p class="detail-content"></p>
+</div>
+<footer class="other">
+    <div class="logo"><img src="../img/logo.png" alt=""/></div>
+    <div class="app-detail">
+        <div style="color:#FFFFFF;font-size:.32rem;">来看星 APP</div>
+        <div style="color:#FFFFFF;font-size:.24rem;">韩国娱乐互动平台</div>
+    </div>
+    <div class="download-button download-app">
+        <img src="../img/download_button.png" alt=""/>
+    </div>
+</footer>
+<div class="activity-detail">
+    <div class="box">
+        <img src="../img/close-div.png" alt="" class="close-div"/>
+        <p class="tip">支持成功,明天继续!</p>
+        <p class="content">
+            <span class="name">少女时代</span>人气值<span class="nmb">123+2</span>点<span class="top local">点距离上一名还差316点人气!</span>
+            <span class="other">在来看星APP中支持，人气值翻倍！</span>
+        </p>
+        <div class="share-btn">邀请更多好友来帮忙</div>
+        <div class="download-app">立即下载来看星APP</div>
+    </div>
+</div>
+<div class="login-div">
+    <div class="login-box">
+        <p class="login-tip">用户登录 <span data-value="login-div" class="close-login-div"></span></p>
+        <div class="username"><input id="loginPhone" type="text" name="username" placeholder="请输入您的手机号码"/></div>
+        <div  class="password"><input id="loginPassword" type="password" name="password" placeholder="请输入您的密码"/>
+            <img src="../img/login/smile2.png" alt="" class="hide-password"/></div>
+        <p class="error-log"></p>
+        <div class="login-btn" id="submitLogin">登录</div>
+        <div class="lose-password"><span class="to-register-btn">注册新账号</span><span class="find-password">忘记密码?</span></div>
+        <!--<div class="other-login">社交账号登录<span class="weibo-login" id="wb_connect_btn"></span><span-->
+                <!--class="qq-login" id="qqLoginBtn"></span></div>-->
+    </div>
+</div>
+<div class="register-div">
+    <div class="register-box">
+        <p class="login-tip">新用户注册 <span data-value="register-div" class="close-login-div"></span></p>
+        <div class="username"><input id="registerPhone" type="text" name="username" placeholder="请输入您的手机号码"/></div>
+        <div class="checked"><input id="registerChecked" type="text" name="checkedCode" placeholder="请输入验证码"/><div class="get-checked-code-btn">获取验证码</div></div>
+        <div  class="password"><input id="registerPassword" type="password" name="password" placeholder="请输入您的密码"/></div>
+        <p class="error-log register-password-log"></p>
+        <div id="submitRegister" class="login-btn">注册</div>
+        <div class="to-login"><span>已有账号?</span><span class="to-login-btn">直接登录</span></div>
+    </div>
+</div>
+<div class="share-div">
+    <div class="div1"><img src="../img/share-tip.png" alt=""/></div>
+    <div class="div2"><img src="../img/share-tip2.png" alt=""/></div>
+</div>
+</body>
+</html>
